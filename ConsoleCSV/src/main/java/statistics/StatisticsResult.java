@@ -1,11 +1,13 @@
 package statistics;
 
+import domain.Address;
+
 import java.util.List;
 import java.util.Map;
 
-public record StatisticsResult<CityRecord>(
+public record StatisticsResult(
         int totalRecords,
-        List<Map.Entry<CityRecord, Integer>> duplicates,
+        List<Map.Entry<Address, Integer>> duplicates,
         Map<String, Map<Integer, Integer>> floorDistribution,
         long processingNanos) {
 
