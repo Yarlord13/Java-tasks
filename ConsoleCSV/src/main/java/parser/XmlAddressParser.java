@@ -19,7 +19,7 @@ import java.util.List;
 public final class XmlAddressParser implements AddressParser {
 
     private static final String Item_tag = "item";
-    private static final String Attr_city = "cite";
+    private static final String Attr_city = "city";
     private static final String Attr_street = "street";
     private static final String Attr_house = "house";
     private static final String Attr_floor = "floor";
